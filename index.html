@@ -8,11 +8,11 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --blue: #0070f2;
-      --dark: #0d1117;
-      --mid: #161b22;
-      --border: #30363d;
-      --text: #e6edf3;
-      --muted: #8b949e;
+      --dark: #ffffff;
+      --mid: #f5f6f8;
+      --border: #e0e4ea;
+      --text: #1d2d3e;
+      --muted: #556b82;
       --white: #ffffff;
     }
     html { scroll-behavior: smooth; }
@@ -21,7 +21,7 @@
     /* ── Nav ── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(13,17,23,0.85); backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.85); backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 40px; height: 56px;
@@ -178,7 +178,7 @@
     @media (max-width: 600px) { .findings-grid { grid-template-columns: 1fr; } }
 
     /* Mobile carousel */
-    .carousel-mobile .slide { background: #0d1117; display: none; flex-direction: column; align-items: center; padding: 32px 20px 0; }
+    .carousel-mobile .slide { background: #f5f6f8; display: none; flex-direction: column; align-items: center; padding: 32px 20px 0; }
     .carousel-mobile .slide.active { display: flex; }
     .mobile-frame { max-width: 320px; width: 100%; border-radius: 28px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5); border: 1px solid #30363d; }
     .mobile-frame img { width: 100%; height: auto; display: block; }
